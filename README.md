@@ -1,6 +1,6 @@
 # 📖 Alivro — Landing Page
 
-> Landing page moderna e responsiva para a livraria com curadoria **Alivro** — onde *Ali* (de Aline) encontra *livro*.
+> Landing page moderna e responsiva para a livraria com curadoria **Alivro**.
 
 ---
 
@@ -148,7 +148,7 @@ Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE` para mais de
 
 ## 👩‍💻 Desenvolvido com
 
-❤️ e muitas xícaras de café — porque toda boa história começa assim.
+❤️ e muitas xícaras de café, porque toda boa história começa assim.
 
 ---
 
