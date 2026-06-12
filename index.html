@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alivro — Curadoria com Alma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== NAV ========== -->
+    <header class="nav" id="nav">
+      <div class="nav__logo">
+        <span class="nav__logo-icon">📖</span>
+        <span class="nav__logo-text">Alivro</span>
+      </div>
+      <nav class="nav__links">
+        <a href="#sobre">Sobre</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre" class="mobile-menu__link">Sobre</a>
+      <a href="#catalogo" class="mobile-menu__link">Catálogo</a>
+      <a href="#contato" class="mobile-menu__link">Contato</a>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__bg-shapes">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Curadoria literária desde 2019</p>
+        <h1 class="hero__title">
+          Cada livro,<br />
+          <em>uma janela</em><br />
+          para o mundo.
+        </h1>
+        <p class="hero__subtitle">
+          Na <strong>Alivro</strong>, cada título é escolhido com cuidado e
+          intenção. Não vendemos livros, criamos encontros entre leitores e
+          histórias que transformam.
+        </p>
+        <div class="hero__actions">
+          <a href="#catalogo" class="btn btn--primary">Ver Catálogo</a>
+          <a href="#sobre" class="btn btn--ghost">Nossa História</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="book-stack">
+          <div class="book book--a">📚</div>
+          <div class="book book--b">✨</div>
+          <div class="book book--c">🌿</div>
+        </div>
+        <div class="hero__badge">
+          <span class="badge__number">+2.400</span>
+          <span class="badge__label">títulos<br />curados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="sobre__grid">
+          <div class="sobre__text fade-in">
+            <span class="section-tag">Quem somos</span>
+            <h2 class="section-title">
+              Não vendemos livros.<br /><em>Apresentamos pessoas</em><br />a
+              histórias que mudam tudo.
+            </h2>
+            <p>
+              A <strong>Alivro</strong> nasceu da convicção de que o livro
+              certo, na hora certa, tem o poder de transformar uma vida. Por
+              isso, cada título que entra aqui foi lido, sentido e escolhido com
+              intenção, nunca por algoritmo, nunca por modismo.
+            </p>
+            <p>
+              Somos uma livraria com curadoria humana, feita por quem lê de
+              verdade. Aqui você não se perde em catálogos infinitos: você
+              encontra.
+            </p>
+            <div class="sobre__stats">
+              <div class="stat">
+                <span class="stat__number">6</span>
+                <span class="stat__label">Anos de história</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">40k+</span>
+                <span class="stat__label">Leitores felizes</span>
+              </div>
+            </div>
+          </div>
+          <div class="sobre__image-block fade-in">
+            <div class="image-card image-card--main">
+              <span class="image-card__emoji">🏡</span>
+              <p>Nossa loja em Salvador</p>
+            </div>
+            <div class="image-card image-card--accent">
+              <span class="image-card__emoji">☕</span>
+              <p>Café literário toda semana</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CATÁLOGO ========== -->
+    <section class="catalogo" id="catalogo">
+      <div class="container">
+        <div class="catalogo__header fade-in">
+          <span class="section-tag">Nosso acervo</span>
+          <h2 class="section-title">Catálogo por <em>gênero</em></h2>
+          <p class="catalogo__subtitle">Escolha sua próxima grande leitura</p>
+        </div>
+
+        <!-- Filtros de Gênero -->
+        <div class="filtros" id="filtros">
+          <button class="filtro-btn active" data-genre="todos">Todos</button>
+          <button class="filtro-btn" data-genre="romance">Romance</button>
+          <button class="filtro-btn" data-genre="ficcao">
+            Ficção Científica
+          </button>
+          <button class="filtro-btn" data-genre="policial">Policial</button>
+          <button class="filtro-btn" data-genre="infantil">Infantil</button>
+          <button class="filtro-btn" data-genre="desenvolvimento">
+            Autoajuda
+          </button>
+        </div>
+
+        <!-- Grid de Livros -->
+        <div class="livros-grid" id="livrosGrid">
+          <!-- Livros são inseridos via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__content fade-in">
+          <span>📬</span>
+          <div>
+            <h3>Receba indicações toda semana</h3>
+            <p>
+              Nossa newsletter com curadoria especial para o seu gosto
+              literário.
+            </p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              type="email"
+              placeholder="seu@email.com"
+              class="newsletter-input"
+              required
+            />
+            <button type="submit" class="btn btn--primary">
+              Quero receber
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="contato__grid">
+          <div class="contato__info fade-in">
+            <span class="section-tag">Fale conosco</span>
+            <h2 class="section-title">
+              Adoramos<br /><em>conversar sobre livros</em>
+            </h2>
+            <p>
+              Tem dúvidas, quer indicações personalizadas ou só quer bater um
+              papo literário? Manda mensagem!
+            </p>
+
+            <div class="contato__itens">
+              <div class="contato__item">
+                <span class="contato__icon">📍</span>
+                <div>
+                  <strong>Endereço</strong>
+                  <p>Rua das Letras, 123 — Salvador, BA</p>
+                </div>
+              </div>
+              <div class="contato__item">
+                <span class="contato__icon">✉️</span>
+                <div>
+                  <strong>E-mail</strong>
+                  <p>oi@alivro.com.br</p>
+                </div>
+              </div>
+              <div class="contato__item">
+                <span class="contato__icon">📱</span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <p>(71) 99999-2026</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato__form-wrapper fade-in">
+            <form class="contato-form" id="contatoForm">
+              <div class="form-group">
+                <label for="nome">Seu nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  placeholder="Como você se chama?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="seu@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <select id="assunto">
+                  <option value="">Escolha um assunto</option>
+                  <option value="indicacao">Indicação de livro</option>
+                  <option value="pedido">Pedido / Encomenda</option>
+                  <option value="evento">Eventos literários</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  rows="4"
+                  placeholder="Escreva sua mensagem..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                Enviar mensagem ✉️
+              </button>
+              <p class="form-success" id="formSuccess">
+                Mensagem enviada! Em breve retornaremos. 🎉
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <span class="nav__logo-icon">📖</span>
+            <span class="nav__logo-text">Alivro</span>
+            <p>Curadoria com alma desde 2019.</p>
+          </div>
+          <div class="footer__links">
+            <h4>Navegação</h4>
+            <a href="#sobre">Sobre</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer__links">
+            <h4>Gêneros</h4>
+            <a href="#catalogo">Romance</a>
+            <a href="#catalogo">Ficção Científica</a>
+            <a href="#catalogo">Infantil</a>
+            <a href="#catalogo">Autoajuda</a>
+          </div>
+          <div class="footer__social">
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+              <a href="#" class="social-btn">📸 Instagram</a>
+              <a href="#" class="social-btn">🐦 Twitter</a>
+              <a href="#" class="social-btn">📘 Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            © 2026 Alivro — Todos os direitos reservados. Feito com ❤️ e muitas
+            xícaras de café.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
