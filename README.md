@@ -155,7 +155,9 @@ MIT — livre para usar, estudar e modificar.
 
 ---
 
-## 👩‍💻 Desenvolvido com código limpo e olhos de leitora.
+## 👩‍💻 Desenvolvido com 
+
+código limpo e olhos de leitora.
 
 ---
 
