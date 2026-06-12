@@ -2,7 +2,6 @@
 
 > Landing page moderna e responsiva para a livraria com curadoria **Alivro**.
 
-🔗 **[Ver projeto no ar](https://alinedantass.github.io/alivro-landing-page)**
 
 ---
 
