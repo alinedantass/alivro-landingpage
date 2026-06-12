@@ -2,27 +2,29 @@
 
 > Landing page moderna e responsiva para a livraria com curadoria **Alivro**.
 
+🔗 **[Ver projeto no ar](https://alinedantass.github.io/alivro-landing-page)**
+
 ---
 
 ## ✨ Sobre o Projeto
 
-**Alivro** é uma livraria com curadoria literária fundada por Aline. O nome é um trocadilho inteligente: **Ali** (apelido da fundadora) + **livro** = Alivro. Onde Aline está, um livro sempre estará.
+A **Alivro** é uma livraria com curadoria literária localizada em Salvador, BA. Cada título do acervo é escolhido com intenção, não por algoritmo, não por tendência, mas por quem lê de verdade.
 
-Esta landing page foi desenvolvida para apresentar a marca, exibir o catálogo por gênero e facilitar o contato com os leitores.
+Esta landing page nasceu para traduzir essa identidade para o digital: apresentar a marca, exibir o catálogo por gênero e aproximar a livraria dos seus leitores.
 
-O projeto foi construído com **HTML, CSS e JavaScript puros**, sem nenhuma dependência de frameworks ou bibliotecas externas.
+O projeto foi construído com **HTML, CSS e JavaScript puros**, sem frameworks ou bibliotecas externas.
 
 ---
 
-## 🖼️ Demonstração
+## 🖼️ Seções
 
 | Seção | Descrição |
 |---|---|
-| **Hero** | Apresentação da marca com animações flutuantes |
-| **Sobre** | História, missão e estatísticas da livraria |
-| **Catálogo** | Grid de livros com filtro por gênero |
-| **Newsletter** | Captura de e-mails com feedback visual |
-| **Contato** | Formulário + informações de localização |
+| **Hero** | Apresentação da marca com animações flutuantes em CSS puro |
+| **Sobre** | Missão, valores e estatísticas da livraria |
+| **Catálogo** | Grid de livros com filtro interativo por gênero |
+| **Newsletter** | Captura de e-mails com feedback visual personalizado |
+| **Contato** | Formulário + endereço, e-mail e WhatsApp |
 
 ---
 
@@ -56,8 +58,8 @@ start index.html
 ```
 alivro/
 │
-├── index.html      # Estrutura HTML da página
-├── style.css       # Todos os estilos e responsividade
+├── index.html      # Estrutura e conteúdo da página
+├── style.css       # Estilos, layout e responsividade
 ├── script.js       # Interatividade e dados dos livros
 └── README.md       # Este arquivo
 ```
@@ -76,24 +78,52 @@ alivro/
 
 ---
 
-## 🧩 Funcionalidades
+## ✅ Funcionalidades implementadas
 
-- [x] **Navegação fixa** com efeito de scroll e menu hamburguer mobile
-- [x] **Hero animado** com formas flutuantes em CSS puro
-- [x] **Catálogo com filtros** por gênero (15 livros cadastrados)
-- [x] **Animações de entrada** com `IntersectionObserver`
-- [x] **Formulário de contato** com feedback visual de envio
-- [x] **Newsletter** com confirmação personalizada
-- [x] **Rolagem suave** para todas as âncoras internas
-- [x] **100% responsivo** — mobile, tablet e desktop
+- [x] Navegação fixa com scroll effect e menu hamburguer mobile
+- [x] Hero com animações flutuantes em CSS puro
+- [x] Catálogo com 15 livros e filtro interativo por gênero
+- [x] Animações de entrada com `IntersectionObserver`
+- [x] Formulário de contato com feedback visual
+- [x] Newsletter com confirmação personalizada
+- [x] Rolagem suave para âncoras internas
+- [x] Layout 100% responsivo — mobile, tablet e desktop
 
+---
+
+## 🔮 Próximas melhorias
+
+- [ ] **Modo dark/light** — alternância de tema, usando variáveis CSS e `localStorage` para persistir a preferência do usuário
+- [ ] **Capas reais dos livros** — integração com a [Open Library Covers API](https://covers.openlibrary.org) para exibir imagens reais a partir do ISBN de cada livro
+- [ ] **Busca em tempo real** — campo de pesquisa que filtra o catálogo dinamicamente por título ou autor enquanto o usuário digita
+- [ ] **Modal de detalhes do livro** — ao clicar no card, abrir um modal com sinopse, avaliação e botão de compra
+- [ ] **Carrinho de compras** — adicionar livros ao carrinho com contador no header e resumo do pedido antes do checkout
+- [ ] **Google Maps embed** — mapa interativo na seção de contato com a localização da loja em Salvador
+- [ ] **Acessibilidade (a11y)** — revisão completa com foco em contraste, navegação por teclado e leitores de tela
+
+---
+
+## ✏️ Como adicionar livros
+
+No `script.js`, insira um novo objeto no array `livros`:
+
+```javascript
+{
+  titulo: "Nome do Livro",
+  autor: "Nome do Autor",
+  preco: "R$ 00,00",
+  genero: "romance",   // romance | ficcao | policial | infantil | desenvolvimento
+  emoji: "📖",
+  cor: "#FFE0E0"
+}
+```
 ---
 
 ## 🛠️ Tecnologias
 
 - **HTML5** — estrutura semântica
-- **CSS3** — variáveis CSS, Grid, Flexbox, animações, media queries
-- **JavaScript (ES5/ES6)** — DOM manipulation, eventos, IntersectionObserver
+- **CSS3** — variáveis, Grid, Flexbox, animações, media queries
+- **JavaScript ES6** — DOM, eventos, IntersectionObserver
 - **Google Fonts** — Playfair Display + DM Sans
 
 ---
@@ -104,28 +134,8 @@ A página foi desenvolvida com abordagem **mobile-first** e possui breakpoints e
 
 - `480px` — Smartphones pequenos
 - `768px` — Tablets e smartphones em landscape
-- `1024px` — Tablets grandes e notebooks
-
----
-
-## ✏️ Como Adicionar Livros
-
-Abra o arquivo `script.js` e adicione um novo objeto no array `livros`:
-
-```javascript
-var livros = [
-  // ... livros existentes ...
-  {
-    titulo: "Nome do Livro",
-    autor: "Nome do Autor",
-    preco: "R$ 00,00",
-    genero: "romance",        // romance | ficcao | policial | infantil | desenvolvimento
-    emoji: "📖",              // emoji que representa o livro
-    cor: "#FFE0E0"            // cor de fundo do card (hex)
-  }
-];
-```
-
+- `1024px` — Notebooks e desktops
+ 
 ---
 
 ## 🤝 Contribuições
@@ -142,13 +152,11 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+MIT — livre para usar, estudar e modificar.
 
 ---
 
-## 👩‍💻 Desenvolvido com
-
-❤️ e muitas xícaras de café, porque toda boa história começa assim.
+## 👩‍💻 Desenvolvido com código limpo e olhos de leitora.
 
 ---
 
