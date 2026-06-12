@@ -10,7 +10,7 @@
 
 Esta landing page foi desenvolvida para apresentar a marca, exibir o catálogo por gênero e facilitar o contato com os leitores.
 
-O projeto foi construído com **HTML, CSS e JavaScript puros**, sem nenhuma dependência de frameworks ou bibliotecas externas,ideal para quem está aprendendo desenvolvimento web.
+O projeto foi construído com **HTML, CSS e JavaScript puros**, sem nenhuma dependência de frameworks ou bibliotecas externas.
 
 ---
 
