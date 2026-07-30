@@ -35,32 +35,20 @@ git clone https://github.com/seu-usuario/alivro.git
 cd alivro
 ```
 
-### 2. Abra no navegador
+### 2. Rode com um servidor local
 
-Basta abrir o arquivo `index.html` diretamente no seu navegador:
+O projeto usa `fetch()` para carregar o catálogo de livros, então **precisa de um servidor local** — não funciona abrindo o arquivo direto no navegador.
 
-```bash
-# No terminal (macOS/Linux)
-open index.html
-
-# No Windows
-start index.html
-```
-
-> Não é necessário servidor local — o projeto roda 100% no browser.
-
+No VS Code, instale a extensão **Live Server**. Depois, clique com o botão direito em `index.html` → **Open with Live Server**.
 ---
 
-## 📁 Estrutura de Arquivos
-
-```
 alivro/
 │
 ├── index.html      # Estrutura HTML da página
 ├── style.css       # Todos os estilos e responsividade
-├── script.js       # Interatividade e dados dos livros
+├── script.js       # Interatividade e lógica do catálogo
+├── livros.json     # Dados dos livros (título, autor, preço, ISBN)
 └── README.md       # Este arquivo
-```
 
 ---
 
@@ -110,22 +98,20 @@ A página foi desenvolvida com abordagem **mobile-first** e possui breakpoints e
 
 ## ✏️ Como Adicionar Livros
 
-Abra o arquivo `script.js` e adicione um novo objeto no array `livros`:
+Abra o arquivo `livros.json` e adicione um novo objeto na lista:
 
-```javascript
-var livros = [
-  // ... livros existentes ...
-  {
-    titulo: "Nome do Livro",
-    autor: "Nome do Autor",
-    preco: "R$ 00,00",
-    genero: "romance",        // romance | ficcao | policial | infantil | desenvolvimento
-    emoji: "📖",              // emoji que representa o livro
-    cor: "#FFE0E0"            // cor de fundo do card (hex)
-  }
-];
+```json
+{
+  "titulo": "Nome do Livro",
+  "autor": "Nome do Autor",
+  "preco": "R$ 00,00",
+  "genero": "romance",
+  "isbn": "0000000000000",
+  "cor": "#FFE0E0"
+}
 ```
 
+> O `isbn` é usado para buscar a capa real do livro via [Open Library](https://openlibrary.org/). O gênero aceita: `romance`, `ficcao`, `policial`, `infantil`, `desenvolvimento`.
 ---
 
 ## 🤝 Contribuições
