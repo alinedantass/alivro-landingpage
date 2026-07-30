@@ -140,15 +140,9 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
-## 📄 Licença
+## 👩‍💻 Desenvolvido por 
 
-Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
-
----
-
-## 👩‍💻 Desenvolvido com
-
-❤️ e muitas xícaras de café — porque toda boa história começa assim.
+Aline Dantas
 
 ---
 
