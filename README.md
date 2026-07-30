@@ -126,6 +126,17 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
+## Processo de Desenvolvimento
+
+Este projeto não nasceu pronto e passou por rodadas reais de evolução:
+
+**Refatoração de sintaxe**: código inicial em JavaScript ES5 (`var`, funções tradicionais) foi migrado para ES6+ (`const`/`let`, arrow functions), com testes manuais após cada mudança para garantir que nada quebrasse.
+**Integração com API externa**: catálogo migrou de dados fixos no código para busca assíncrona (`fetch`) em `livros.json`, com estado de erro tratado visivelmente na tela caso a busca falhe.
+**Capas reais via Open Library API**: emojis foram substituídos por capas reais de livros, buscadas dinamicamente pelo ISBN de cada título.
+**Resolução de conflito de merge**: durante a sincronização entre o repositório local e o remoto, foi necessário resolver um merge conflict real envolvendo quatro arquivos.
+
+---
+
 ## Desenvolvido por 
 
 Aline Dantas
