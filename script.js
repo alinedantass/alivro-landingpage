@@ -32,11 +32,14 @@ function renderizarLivros(filtro) {
     card.className = "livro-card";
     card.style.animationDelay = `${index * 0.05}s`;
 
-    card.innerHTML = `
-      <div class="livro-card__capa-placeholder" style="background: linear-gradient(135deg, ${livro.cor} 0%, #fff 100%);">
-        <span style="font-size: 5rem;">${livro.emoji}</span>
-      </div>
-      <div class="livro-card__body">
+ card.innerHTML = `
+  <img
+    class="livro-card__capa"
+    src="https://covers.openlibrary.org/b/isbn/${livro.isbn}-M.jpg"
+    alt="Capa do livro ${livro.titulo}"
+    onerror="this.style.background='linear-gradient(135deg, ${livro.cor} 0%, #fff 100%)'; this.src=''; this.alt='Capa indisponível';"
+  />
+  <div class="livro-card__body">
         <span class="livro-card__genero genre-tag--${livro.genero}">
           ${generoLabel[livro.genero]}
         </span>
