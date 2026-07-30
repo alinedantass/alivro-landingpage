@@ -4,7 +4,7 @@
 
 ---
 
-## ✨ Sobre o Projeto
+## Sobre o Projeto
 
 **Alivro** é uma livraria com curadoria literária fundada por Aline. O nome é um trocadilho inteligente: **Ali** (apelido da fundadora) + **livro** = Alivro. Onde Aline está, um livro sempre estará.
 
@@ -14,7 +14,7 @@ O projeto foi construído com **HTML, CSS e JavaScript puros**, sem nenhuma depe
 
 ---
 
-## 🖼️ Demonstração
+## Demonstração
 
 | Seção | Descrição |
 |---|---|
@@ -26,7 +26,7 @@ O projeto foi construído com **HTML, CSS e JavaScript puros**, sem nenhuma depe
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
 ### 1. Clone o repositório
 
@@ -52,7 +52,7 @@ alivro/
 
 ---
 
-## 🎨 Paleta de Cores
+## Paleta de Cores
 
 | Nome | Hex | Uso |
 |---|---|---|
@@ -64,7 +64,7 @@ alivro/
 
 ---
 
-## 🧩 Funcionalidades
+## Funcionalidades
 
 - [x] **Navegação fixa** com efeito de scroll e menu hamburguer mobile
 - [x] **Hero animado** com formas flutuantes em CSS puro
@@ -77,7 +77,7 @@ alivro/
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **HTML5** — estrutura semântica
 - **CSS3** — variáveis CSS, Grid, Flexbox, animações, media queries
@@ -86,7 +86,7 @@ alivro/
 
 ---
 
-## 📱 Responsividade
+## Responsividade
 
 A página foi desenvolvida com abordagem **mobile-first** e possui breakpoints em:
 
@@ -96,7 +96,7 @@ A página foi desenvolvida com abordagem **mobile-first** e possui breakpoints e
 
 ---
 
-## ✏️ Como Adicionar Livros
+## Como Adicionar Livros
 
 Abra o arquivo `livros.json` e adicione um novo objeto na lista:
 
@@ -114,7 +114,7 @@ Abra o arquivo `livros.json` e adicione um novo objeto na lista:
 > O `isbn` é usado para buscar a capa real do livro via [Open Library](https://openlibrary.org/). O gênero aceita: `romance`, `ficcao`, `policial`, `infantil`, `desenvolvimento`.
 ---
 
-## 🤝 Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Para contribuir:
 
@@ -126,7 +126,7 @@ Contribuições são bem-vindas! Para contribuir:
 
 ---
 
-## 👩‍💻 Desenvolvido por 
+## Desenvolvido por 
 
 Aline Dantas
 
